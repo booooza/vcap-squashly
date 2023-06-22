@@ -16,7 +16,7 @@ fn main() {
     }
 }
 
-pub fn get_services() -> Vec<Service> {
+fn get_services() -> Vec<Service> {
     let vcap_services = env::var("VCAP_SERVICES").unwrap_or_default();
     let services =
         serde_json::from_str::<HashMap<String, Vec<Service>>>(&vcap_services).unwrap_or_default();
@@ -70,9 +70,9 @@ fn format_var(key: String, value: &String) -> String {
 }
 
 #[derive(Deserialize, PartialEq, Debug, Clone)]
-pub struct Service<Credentials = Value> {
-    pub name: String,
-    pub credentials: Credentials,
+struct Service<Credentials = Value> {
+    name: String,
+    credentials: Credentials,
 }
 
 #[cfg(test)]
