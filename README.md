@@ -1,4 +1,4 @@
-# vcap-squashly
+# vcap-squashly [![build](https://github.com/booooza/vcap-squashly/actions/workflows/rust.yml/badge.svg)](https://github.com/booooza/vcap-squashly/actions/workflows/rust.yml)
 Turn VCAP_SERVICES into flat env vars.
 
 This is a rewrite of [vcap-squash](https://github.com/cloudfoundry-community/vcap-squash/tree/master) in Rust.
