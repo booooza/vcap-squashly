@@ -66,13 +66,3 @@ To build a binary using your Rust env:
 ```sh
 $ cargo build
 ```
-
-rustup target add x86_64-unknown-linux-gnu  # Linux (AMD64)
-rustup target add i686-unknown-linux-gnu    # Linux (386)
-rustup target add armv7-unknown-linux-gnueabihf  # Linux (ARM)
-rustup target add x86_64-apple-darwin       # macOS (AMD64)
-rustup target add i686-apple-darwin         # macOS (386)
-rustup target add x86_64-unknown-freebsd    # FreeBSD (AMD64)
-rustup target add i686-unknown-freebsd      # FreeBSD (386)
-rustup target add i686-pc-windows-gnu       # Windows (386)
-rustup target add x86_64-pc-windows-gnu     # Windows (AMD64)
